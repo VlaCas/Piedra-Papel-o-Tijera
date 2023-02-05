@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <title>Piedra, Papel o Tijera</title>
+
+    </head>
+
+    <body>
+
+        <div id="tablero">
+            <h1>Resultado:</h1>
+            <h2 id="resultado"></h2>
+        </div>
+
+        <div id="contenedor">
+
+            <div id="mano-a">
+
+                <div id="contenedor-opciones-a">
+                    <div class="contenedores-opciones-a" onclick="jugada(0)">
+                        <img src="imagenes/piedra-a.png" alt="imagen-opcion">
+                    </div>
+                    <div class="contenedores-opciones-a" onclick="jugada(1)">
+                        <img src="imagenes/papel-a.png" alt="imagen-opcion">
+                    </div>
+                    <div class="contenedores-opciones-a" onclick="jugada(2)">
+                        <img src="imagenes/tijera-a.png" alt="imagen-opcion">
+                    </div>
+                </div>
+                
+                <img id="imagen-a" src="imagenes/piedra-a-cargando.png" alt="mano">
+                <p id="interrogante">?</p>
+
+            </div>
+
+            <div id="mano-b">
+                <p id="interrogante2">?</p>
+                <img id="imagen-b" src="imagenes/tijera-b-cargando.png" alt="mano">
+            </div>
+
+        </div>
+
+        <div id="historial">
+
+            <h3 class="titulosHistorial">Marcador:</h3>
+            <div id="cuentaVictorias">
+                <div id="cuentaJug">
+                    <h3 id="ctaJug">Jugador</h3>
+                </div>
+                <div id="cuentaCom">
+                    <h3 id="ctaCom">Computadora</h3>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3 class="titulosHistorial">Historial de Jugadas:</h3>
+
+            <div class="resultados">
+                <div class="contenedorImgResultadosA">
+                    <img class="imagenesHistorial" id="imgHis1">
+                </div>
+                <div class="contenedorImgResultadosB">
+                    <img class="imagenesHistorial" id="imgHis2">
+                </div>
+            </div>
+
+            <div class="resultados">
+                <div class="contenedorImgResultadosA">
+                    <img class="imagenesHistorial" id="imgHis3">
+                </div>
+                <div class="contenedorImgResultadosB">
+                    <img class="imagenesHistorial" id="imgHis4">
+                </div>
+            </div>
+
+            <div class="resultados">
+                <div class="contenedorImgResultadosA">
+                    <img class="imagenesHistorial" id="imgHis5">
+                </div>
+                <div class="contenedorImgResultadosB">
+                    <img class="imagenesHistorial" id="imgHis6">
+                </div>
+            </div>
+
+            <div class="resultados">
+                <div class="contenedorImgResultadosA">
+                    <img class="imagenesHistorial" id="imgHis7">
+                </div>
+                <div class="contenedorImgResultadosB">
+                    <img class="imagenesHistorial" id="imgHis8">
+                </div>
+            </div>
+
+            <div class="resultados">
+                <div class="contenedorImgResultadosA">
+                    <img class="imagenesHistorial" id="imgHis9">
+                </div>
+                <div class="contenedorImgResultadosB">
+                    <img class="imagenesHistorial" id="imgHis10">
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+    <script src="main.js"></script>
+
+</html>
